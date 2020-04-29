@@ -1,0 +1,32 @@
+# Mysql数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/petcage?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+#    username: root
+#    password: 123456
+#    url: jdbc:mysql://39.106.167.223:3306/petcage?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+#    username: root
+#    password: HDEJjged819d.#bh
+    url: jdbc:mysql://39.100.118.8:9834/petcage?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    username: petcage
+    password: TDP^1%!n#LWSICp$
+    filters: wall,mergeStat
+
+    # 连接池大小根据实际情况调整
+    max-active: 5
+    max-pool-prepared-statement-per-connection-size: 5
+
+  # 邮件发送配置（改为自己的账号和密码）
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: sn93@qq.com
+    password: xxxpassword
+
+# 邮件发送（改为自己的账号）
+mail:
+  from: sn93@qq.com
+
+server:
+  port: 9666

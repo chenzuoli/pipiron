@@ -1,0 +1,84 @@
+@layout("/common/_form.html",{js:["/assets/petcage_busi/pet/pet_edit.js"]}){
+
+<form class="layui-form" id="petEditForm" lay-filter="petEditForm">
+    <div class="layui-fluid" style="padding-bottom: 75px;">
+        <div class="layui-card">
+            <div class="layui-card-header">宠物基本信息</div>
+            <div class="layui-card-body">
+                <div class="layui-form-item layui-row">
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">宠物ID<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="id" name="id" placeholder="" type="text" disabled="disabled" class="layui-input"
+                                   lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">联系人<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="contact" name="contact" placeholder="请输入联系人" type="text" class="layui-input"
+                                   lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">宠物类型<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="pet_type" name="pet_type" placeholder="请输入宠物类型" type="text" class="layui-input"
+                                   lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">宠物品种<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="variety" name="variety" placeholder="请输入宠物品种" type="text" class="layui-input"
+                                   lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">昵称<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="nick_name" name="nick_name" placeholder="请输入昵称" type="text" class="layui-input"
+                                   lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">性别<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="gender" name="gender" placeholder="请输入性别" type="text" class="layui-input"
+                                   lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">出生日期<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="birthday" name="birthday" placeholder="请输入出生日期" type="text" class="layui-input"
+                                   lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">头像地址<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="avatar_url" name="avatar_url" placeholder="请输入头像http地址" type="text" class="layui-input"
+                                   lay-verify="required" required/>
+                        </div>
+                    </div>
+                    <div class="layui-inline layui-col-md12">
+                        <label class="layui-form-label">描述<span style="color: red;">*</span></label>
+                        <div class="layui-input-block">
+                            <input id="description" name="description" placeholder="请输入描述" type="text" class="layui-input"
+                                   lay-verify="required" required/>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group-bottom text-center">
+        <button class="layui-btn" lay-filter="btnSubmit" lay-submit>&emsp;提交&emsp;</button>
+        <button type="reset" class="layui-btn layui-btn-primary" ew-event="closeDialog">&emsp;取消&emsp;</button>
+    </div>
+
+</form>
+
+@}
